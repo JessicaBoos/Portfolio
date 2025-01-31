@@ -1,23 +1,91 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import signature from "./signature.png";
+import portrait from "./portrait.jpg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App font-monospace">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src={signature}
+              alt="Logo"
+              width="150"
+              height="75"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Contact me!
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://github.com/JessicaBoos#"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header className="App-header ">
+        <div className="info-container">
+          <div className="row">
+            <div className="col-7">
+              <span className="">
+                <div className="fs-5">
+                  Hi! Mein name is <strong>Jessica Boos </strong>und ich bin
+                </div>
+                <br />
+                <div className="App-header-text ">
+                  Frontend <br /> Developer.
+                </div>
+              </span>
+              <div className="App-header-description fs-5">
+                <br />
+                mit Erfahrung in JavaScript, VSCode, GitHub, API, React.js und
+                Bootstrap.
+              </div>
+            </div>
+            <div className="col-4">
+              <span className="App-header-img">
+                <img src={portrait} className="img-fluid" />
+              </span>
+            </div>
+          </div>
+        </div>
       </header>
+      <div className="info-container">
+        <strong className="Projects fs-1">Projects</strong>
+      </div>
     </div>
   );
 }
