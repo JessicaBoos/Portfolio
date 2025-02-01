@@ -1,12 +1,13 @@
 import "./App.css";
 import signature from "./signature.png";
 import portrait from "./portrait.jpg";
+import Projects from "./Projects.js";
 
 function App() {
   return (
     <div className="App font-monospace">
       <nav
-        class="navbar navbar-expand-lg bg-body-tertiary"
+        class="navbar sticky-top navbar-expand-lg bg-body-tertiary"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
@@ -83,9 +84,7 @@ function App() {
           </div>
         </div>
       </header>
-      <div className="info-container">
-        <strong className="Projects fs-1">Projects</strong>
-      </div>
+      <Projects />
     </div>
   );
 }
